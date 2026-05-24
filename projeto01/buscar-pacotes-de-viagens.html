@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>JM Viagens - Buscar Pacotes</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table border="0" width="900" align="center">
+        <tr>
+            <td>
+                <img src="imagens/imagens/logo.png" alt="Logo">
+            </td>
+            <td align="right">
+                <a href="index.html">Home</a> |
+                <a href="quem-somos.html">Quem Somos</a> |
+                <a href="destinos.html">Destinos</a> |
+                <a href="buscar.html">Buscar Pacotes</a> |
+                <a href="contato.html">Contato</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="imagens/imagens/buscar-pacote-hero.jpg" alt="Imagem Principal Buscar" width="900">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2><b>Buscar Pacotes de Viagens</b></h2>
+                <p>
+                    Preencha os dados abaixo para encontrarmos os melhores pacotes de viagens disponíveis para você.
+                </p>
+                
+                <form action="#" method="get">
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><label for="origem">Origem:</label></td>
+                            <td><input type="text" id="origem" name="origem" size="40" placeholder="Digite a cidade de origem" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="destino">Destino:</label></td>
+                            <td><input type="text" id="destino" name="destino" size="40" placeholder="Digite a cidade de destino" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="data_partida">Data Partida:</label></td>
+                            <td><input type="date" id="data_partida" name="data_partida" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="data_retorno">Data Retorno:</label></td>
+                            <td><input type="date" id="data_retorno" name="data_retorno" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="quartos">Quartos:</label></td>
+                            <td><input type="number" id="quartos" name="quartos" min="1" value="1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="adultos">Qtde Adultos:</label></td>
+                            <td><input type="number" id="adultos" name="adultos" min="1" value="1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="criancas">Qtde Crianças:</label></td>
+                            <td><input type="number" id="criancas" name="criancas" min="0" value="0" required></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <input type="submit" value="Buscar Pacotes">
+                                <input type="reset" value="Limpar Campos">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <h4 align="center">
+                Todos os direitos reservados.
+               </h4>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
