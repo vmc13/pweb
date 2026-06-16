@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício - Cards de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        article.card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            overflow: hidden; 
+        }
+
+        .imagem-noticia {
+            float: right;
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-left: 15px;
+            object-fit: cover;
+        }
+
+        header.portal {
+            font-size: 12px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        p.texto-noticia {
+            font-size: 16px;
+            color: #444444;
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        footer.data-publicacao {
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <article class="card">
+            <header class="portal">InfoMoney</header>
+            <img src="https://picsum.photos/id/10/80/80" alt="Imagem da notícia" class="imagem-noticia">
+            <p class="texto-noticia">Preços no mercado livre operam próximos à estabilidade apesar de seca histórica.</p>
+            <footer class="data-publicacao">2 horas atrás</footer>
+        </article>
+
+        <article class="card">
+            <header class="portal">CNN Brasil</header>
+            <img src="https://picsum.photos/id/20/80/80" alt="Imagem da notícia" class="imagem-noticia">
+            <p class="texto-noticia">Três Poderes jamais devem avançar sobre "competências alheias", diz Arthur Lira em discurso.</p>
+            <footer class="data-publicacao">4 horas atrás</footer>
+        </article>
+
+        <article class="card">
+            <header class="portal">R7.COM</header>
+            <img src="https://picsum.photos/id/30/80/80" alt="Imagem da notícia" class="imagem-noticia">
+            <p class="texto-noticia">Japão inicia segunda fase de despejo de água tratada da central nuclear de Fukushima.</p>
+            <footer class="data-publicacao">7 horas atrás</footer>
+        </article>
+
+        <article class="card">
+            <header class="portal">G1</header>
+            <img src="https://picsum.photos/id/40/80/80" alt="Imagem da notícia" class="imagem-noticia">
+            <p class="texto-noticia">Rompimento de lago glacial após fortes chuvas deixa mortos e desaparecidos no exterior.</p>
+            <footer class="data-publicacao">14 horas atrás</footer>
+        </article>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background-color: #d6d6d6;
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px; 
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: calc(33.333% - 15px);
+            min-width: 250px;
+            box-sizing: border-box;
+            border: 1px solid #c0c0c0;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card p {
+            margin: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p.descricao {
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="galeria">
+        <div class="card">
+            <img src="https://uc228dd0c72a3b303436c5ce8832.previews.dropboxusercontent.com/p/thumb/ADAHx9AFqoVcmjWtkWAeYk2VkC9uc2k59Q9lB6xVDG0uoexMk_RdjcBdaO3c8KI-I1QlGWEVJB5ZngXmekDb8YUuRIb1Fc9zDurjbyWowoUOwuCa9XwELHeCOENfWv58OB6c4nRwcmqQ26EELhkQH9zGMHBhIMoctzX9wvn5kxr7HUU7cYrBZzUmGCoiSBOr2z-cBdQEnacWxjKdNbsRM5DsZ27secZv3c6tTpWdtOVIiG2UNqXP0CtymtfWIS5IPzyOmgNNjj9T0ftVCT46kb9DshXQYXWd4c1Bp620pHD_-J8i7KPe0qCkpEwAY2U0KAziw_tck0fhzU04bZdTNZU_/p.png" alt="">
+            <p>Resumo</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ucedcf40d2d67564d9cfd1fc4238.previews.dropboxusercontent.com/p/thumb/ADC-iYHRFza9hAFsXONbLyTy_-Y4PV-2S3lMjjNgOp7yjpsdfak3Yee1UcAbAPrL3wlZQpitpr8ni2UYyI_slLDIcod51Fe-8diTUyP7D-uOV_S1B2_hZiP7M17QGrm8TMdBCJQMAzNrsNS41L_9JY9gQFEy_cAYITTRSG-x-McPhn8xKGUYIVDjJQFFKv_U1zKRWKRKvml9AGRx1-r7iHkZCvGssIhBFSpde4gijqmEPMBXR-udTnM1BaS-nn46lh-8uE5Kpm8l17ZQk5vgZAbipdcMYR4b-tXdGcNw7KEmrctBOFk3fc5uuAooUhKQbt8ceRbQaDc6cIl8bACWbcNo/p.png" alt="">
+            <p>Resumo</p>
+        </div>
+
+        <div class="card">
+            <img src="https://uc6d288929558ccd9ab00d69389d.previews.dropboxusercontent.com/p/thumb/ADAWkBwXVXoWKsq2ZbFHDBOH4rAO5gXMKLzEXTV8Z7fARmOKNhkVjWjKRtPbmK0_sLnuyXKcUrne1krrtg-BG7ujNdc4yR9rEbxPUZw8vWJGi_G-ktfFaPbm8EvkCbJk8puWyOcSFvIql8mXz9pUVHTAz0xZYtGG9SfSYbw7ozJU3GQAViePtsTittpsVumgeC-xd3Co0iPmO6k10-npBc4d5qvq984_frl5A91DUDExhL7s2OCcPMJLaOBSlN7qgcHoUP1WJe6RbZhQkJscN82MwvfgTAzmkwgR4KTCPDlfXtvRzrynGfAtmdhWfK98wTbN-vhoUyPhnepBWIYuThup/p.png" alt="">
+            <p>Resumo</p>
+        </div>
+
+        <div class="card">
+            <img src="https://uc83abf23b104f97dd7f4888adec.previews.dropboxusercontent.com/p/thumb/ADAnmtH2CsEYNb1sVTwsGzkcKO8_wuLPj1CUByKH1S_xXHOSNEaVRq93IgdaXWJvb--dg0kAjQYKyx3E2sEHwqQ7kDnRGQxBVd4kDMg_0gbaDBG02Mc4ROP2jcKAgKwgbXf2FrefXKWM54YqudjFdaYNWaemo7typG9HWBF7-vUmzfi4DEC2CjVjByPxSYiWvP_QuwO2JoZLNYcFFsSUXA3ViL-f-9iBzi_a6qXW16yzoP0BZTvnvSa5aLSPuJpKMV1SkvPhUNYxqUVbDKZBkFjcpO4XnLAoD3ultWYP4Q7WKMXqj0YpxVHXUuzfdVWi7cuMhMePwpOzFA97hmcn9_Gj/p.png" alt="">
+            <p>Resumo</p>
+        </div>
+
+        <div class="card">
+            <img src="https://uc0feb6638a796e63956c0b2bd2e.previews.dropboxusercontent.com/p/thumb/ADDwCYL1SD4MibVhpgzsH-qQuD3QqnKPbdlSdkfcnLvP9FSSjYIV084bM7aMRa0zDROlMUGZNeM1cl2tcOdhXi6grjcGrJ73kzWFgRjjtu1jIUIHqa6q-oEJzywvzczIwaq53TtC7Z7BSxuHvxs5WtYHhzZjdLcss1F2u0ZSuOnMcET5dxMfX6vKwC211lEYeKJKpjV4HOX0L5X91Q0IH05d5COa3sBhbYgLNJfLzmJo6S8Rf2QlpQ-1DFeUBURyDnyQxNxU6tjB9WzKHmNQkYYjcFlVGTnRWtzbVydopo-a1IKgPywoubzIJgxV2fcshWVdrwMXXpd_2NcvGrG4713S/p.png" alt="">
+            <p>Resumo</p>
+        </div>
+    </div>
+
+    <p class="descricao">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et nulla luctus, feugiat est sed, sollicitudin urna. Mauris euismod porta aliquam. Mauris ut justo ut est consectetur rhoncus. Duis vel volutpat nisl. Etiam tortor nunc, efficitur non sapien ac, fringilla imperdiet dui. Nam blandit leo non justo euismod facilisis. Donec imperdiet quam blandit nunc elementum aliquam. Duis interdum dolor at placerat sodales. Aenean dui mi, congue ac pellentesque at, porta vitae elit. Maecenas non elementum nisl, a posuere nunc. Aenean scelerisque libero sed orci vulputate, quis auctor purus consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+</body>
+
+</html>

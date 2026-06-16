@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MODELO</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        /* Zera margens padrão */
+body { margin: 0; font-family: sans-serif; }
+
+/* -- LAYOUT 1 -- */
+.header-fixo {
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Garante que fique acima do texto */
+}
+
+.header { background-color: #8c9eff; padding: 20px; text-align: center; }
+.menu { background-color: #ff8a80; padding: 10px; text-align: center; }
+
+.conteudo-principal {
+    display: flex; /* Coloca as divs lado a lado */
+    width: 100%;
+    margin-top: 100px; /* Compensa a altura do header fixo para não sobrepor */
+    min-height: 80vh; /* Altura de exemplo */
+}
+
+.coluna-esquerda { width: 25%; background-color: #ffe57f; padding: 20px; }
+.coluna-centro { width: 50%; background-color: #b9f6ca; padding: 20px; }
+.coluna-direita { width: 25%; background-color: #ffd180; padding: 20px; }
+
+.footer { background-color: #ea80fc; padding: 15px; text-align: center; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="layout1">
+    <div class="header-fixo">
+        <div class="header">Header (100%)</div>
+        <div class="menu">Menu</div>
+    </div>
+
+    <div class="conteudo-principal">
+        <div class="coluna-esquerda">Left (25%)</div>
+        <div class="coluna-centro">Center (50%)</div>
+        <div class="coluna-direita">Right (25%)</div>
+    </div>
+
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>
