@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MODELO - Portal de Notícias v2</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            color: #333333;
+        }
+
+        body > header, body > footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        body > header {
+            font-size: 24px;
+            border-bottom: 4px solid #8bb832;
+        }
+
+        body > footer {
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .layout-principal {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 15px;
+            align-items: flex-start;
+        }
+
+        nav {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 16px;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #8bb832;
+            font-weight: bold;
+        }
+
+        main.grade-noticias {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        main section {
+            background-color: #ffffff;
+            border: 1px solid #e1e1e1;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        main section header {
+            background-color: #fafafa;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eeeeee;
+            text-align: left;
+            color: #333;
+        }
+
+        main section header h2 {
+            color: #8bb832;
+            margin: 0 0 5px 0;
+            font-size: 17px;
+        }
+
+        main section header p.meta {
+            font-size: 11px;
+            color: #888888;
+            margin: 0;
+        }
+
+        main section article {
+            padding: 15px;
+            flex: 1;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        main section article img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        main section footer {
+            background-color: #f9f9f9;
+            padding: 10px 15px;
+            font-size: 11px;
+            color: #666666;
+            text-align: right;
+            border-top: 1px solid #eeeeee;
+            font-style: italic;
+        }
+
+        aside.banners {
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        aside.banners .publicidade {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        aside.banners img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- &lt;header&gt; - PORTAL DE NOTÍCIAS -->
+         PORTAL DE NOTÍCIAS
+    </header>
+
+    <div class="layout-principal">
+
+        <nav>
+            <ul>
+                <li><a href="#">carros</a></li>
+                <li><a href="#">ciência</a></li>
+                <li><a href="#">economia</a></li>
+                <li><a href="#">educação</a></li>
+            </ul>
+        </nav>
+
+        <main class="grade-noticias">
+
+            <section>
+                <header>
+                    <h2>Novo elétrico popular chega ao Brasil</h2>
+                    <p class="meta">postado em <time datetime="2026-06-22">22 junho 2026</time></p>
+                </header>
+                <article>
+                    <img src="https://picsum.photos/id/1071/300/150" alt="Carro na estrada">
+                    Montadora announces modelo compacto com bateria de longa duração e preço competitivo para o mercado nacional.
+                </article>
+                <footer>Postado por Equipe Auto</footer>
+            </section>
+
+            <section>
+                <header>
+                    <h2>Água descoberta em exoplaneta</h2>
+                    <p class="meta">postado em <time datetime="2026-06-21">21 junho 2026</time></p>
+                </header>
+                <article>
+                    <img src="https://picsum.photos/id/1043/300/150" alt="Nebulosa espacial">
+                    Telescópio espacial capta assinaturas químicas de vapor d'água na atmosfera de um planeta a 40 anos-luz.
+                </article>
+                <footer>Postado por Redação Científica</footer>
+            </section>
+
+            <section>
+                <header>
+                    <h2>Bolsa opera em alta com novo corte</h2>
+                    <p class="meta">postado em <time datetime="2026-06-20">20 junho 2026</time></p>
+                </header>
+                <article>
+                    <img src="https://picsum.photos/id/1060/300/150" alt="Gráficos financeiros">
+                    O mercado reagiu com otimismo após a reunião do Banco Central que definiu a nova taxa básica de juros.
+                </article>
+                <footer>Postado por Carlos Invest</footer>
+            </section>
+
+            <section>
+                <header>
+                    <h2>MEC libera novas vagas para o SISU</h2>
+                    <p class="meta">postado em <time datetime="2026-06-19">19 junho 2026</time></p>
+                </header>
+                <article>
+                    <img src="https://picsum.photos/id/367/300/150" alt="Livros em uma biblioteca">
+                    Estudantes de todo o país já podem consultar o edital retificado com a distribuição de cursos por universidade.
+                </article>
+                <footer>Postado por Ana Edu</footer>
+            </section>
+
+        </main>
+
+        <aside class="banners">
+            <div class="publicidade">
+                <img src="https://picsum.photos/id/111/200/220" alt="Banner Pneus e Baterias">
+            </div>
+            <div class="publicidade">
+                <img src="https://picsum.photos/id/160/200/180" alt="Banner Aplicativo">
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <!-- &lt;footer&gt; - Sistema de Portal Semântico HTML5 -->
+         Sistema de Portal Semântico HTML5
+    </footer>
+
+</body>
+</html>
