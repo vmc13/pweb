@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade 13</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style type="text/css">
+        .box {
+            background: #b9c941;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box content-box">
+        <fieldset>
+            <legend>Dados Pessoais (content-box)</legend>
+            <p>Nome: <input type="text"></p>
+            <p>E-Mail: <input type="text"></p>
+        </fieldset>
+    </div>
+
+    <div class="box border-box">
+        <fieldset>
+            <legend>Dados Pessoais (border-box)</legend>
+            <p>Nome: <input type="text"></p>
+            <p>E-Mail: <input type="text"></p>
+        </fieldset>
+    </div>
+    <h2>
+        <a href="exercicio_2.html">
+            Exercício Colorido
+        </a>
+    </h2>
+</body>
+</html>

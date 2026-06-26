@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercício - Flor CSS3</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .container-flor {
+            width: 204px;
+            height: 204px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .container-circulo {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .bloco {
+            width: 100px;
+            height: 100px;
+        }
+
+        .vermelho {
+            background-color: #ff0000;
+            border-radius: 50% 50% 0 50%;
+            -webkit-border-radius: 50% 50% 0 50%;
+            -moz-border-radius: 50% 50% 0 50%;
+        }
+
+        .amarelo {
+            background-color: #ffa500;
+            border-radius: 50% 50% 50% 0;
+            -webkit-border-radius: 50% 50% 50% 0;
+            -moz-border-radius: 50% 50% 50% 0;
+        }
+
+        .verde {
+            background-color: #008000;
+            border-radius: 50% 0 50% 50%;
+            -webkit-border-radius: 50% 0 50% 50%;
+            -moz-border-radius: 50% 0 50% 50%;
+        }
+
+        .roxo {
+            background-color: #800080;
+            border-radius: 0 50% 50% 50%;
+            -webkit-border-radius: 0 50% 50% 50%;
+            -moz-border-radius: 0 50% 50% 50%;
+        }
+
+        .circulo-se {
+            background-color: #ff0000;
+            border-radius: 100% 0 0 0;
+            -webkit-border-radius: 100% 0 0 0;
+            -moz-border-radius: 100% 0 0 0;
+        }
+
+        .circulo-sd {
+            background-color: #ffa500;
+            border-radius: 0 100% 0 0;
+            -webkit-border-radius: 0 100% 0 0;
+            -moz-border-radius: 0 100% 0 0;
+        }
+
+        .circulo-ie {
+            background-color: #008000;
+            border-radius: 0 0 0 100%;
+            -webkit-border-radius: 0 0 0 100%;
+            -moz-border-radius: 0 0 0 100%;
+        }
+
+        .circulo-id {
+            background-color: #800080;
+            border-radius: 0 0 100% 0;
+            -webkit-border-radius: 0 0 100% 0;
+            -moz-border-radius: 0 0 100% 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-flor">
+        <div class="bloco vermelho"></div>
+        <div class="bloco amarelo"></div>
+        <div class="bloco verde"></div>
+        <div class="bloco roxo"></div>
+    </div>
+
+    <div class="container-circulo">
+        <div class="bloco circulo-se"></div>
+        <div class="bloco circulo-sd"></div>
+        <div class="bloco circulo-ie"></div>
+        <div class="bloco circulo-id"></div>
+    </div>
+
+</body>
+</html>
